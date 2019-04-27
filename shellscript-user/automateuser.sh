@@ -1,6 +1,6 @@
 #!/bin/bash
-#This Script allow to create automate user and password
-#Creating user 
+#this Script allow to create automate user and password
+#Creating user
 USERS=${@}
 for USER in ${USERS}
 do
@@ -14,6 +14,5 @@ PASSWORD=$APL_UPPER_C${RANDOM}$(date +%N${RANDOM})${SPEC_CHAR}${APL_LOWER_C}${RA
 useradd ${USER} -p ${PASSWORD}
 echo "User ${USER} is successfully created."
 echo ${PASSWORD}
-sleep 3s
 done
 

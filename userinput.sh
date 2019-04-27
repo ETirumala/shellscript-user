@@ -3,6 +3,7 @@
   #Take User input for username and Password
   read -p "Please Enter the Username : " USER_NAME
   read -s -p "Please Enter the Password : " PASSWORD
+  #creating username and password
   useradd ${USER_NAME} -p ${PASSWORD}
   echo ${PASSWORD}
   echo
